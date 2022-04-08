@@ -4,26 +4,56 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>練習3</title>
+
+        <title>The Seeker ver 1.0</title>
+        <link rel="stylesheet" href="css/TheSeekerStyle.css">
+        <style>
+            a{text-decoration: none;}
+            a:link
+            {
+                color:rgb(146, 146, 146) ;
+            }
+            a:visited
+            {
+                color:rgb(146, 146, 146) ;
+            }
+            a:hover
+            {
+                color: #f3d664;
+            }
+        </style>
     </head>
     <body>
-            <h1>The Seeker遊戲介紹</h1>
-        
-                <ul>
+        <header>
+            <img style="padding: 5px ;" src="images/The Seeker Title01.png" width="350" height="200" >            
+            
+            <nav>
+                <ul class="nav">
                     <li><a href="default.html">遊戲簡介</a></li>
                     <li><a href="The Seeker01.html">遊玩畫面</a></li>
                     <li><a href="The Seeker02.html">遊戲宣傳片</a></li>
                 </ul>
-                <hr>
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/Sf9QqdFs_ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </nav>
+        </header>
+        <article>
+            <section>
+                <p><h2>遊玩畫面</h2></p>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/Sf9QqdFs_ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </section>
+        </article>
 
-            </iframe>
-            <p>
-                <audio controls autoplay >
-                    <source src="audio/Menu.mp3" type="audio/mpeg">
-                </audio>
-            </p>
 
+        <!-- <audio controls autoplay > -->
+        <!-- 背景音樂自動重複播放 -->
+        <audio autoplay loop>
+            <source src="audio/Menu.mp3" type="audio/mpeg">
+        </audio>
+
+        
+        <footer id="footer">
+            <div text>© 2022 The Seeker Inc.  All rights reserved.</div> 
+        </footer>
     </body>
 
 </html>
