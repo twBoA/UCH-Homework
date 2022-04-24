@@ -1,76 +1,186 @@
+*
+{
+    scroll-behavior: smooth;
+}
 html
 {
     margin:0;
     padding:0;
 }
 
-body
-{
-    width: 1920px;
-
-    margin: 0 auto;
-
-    background-color: rgb(82, 82, 82);
-}
-
 header
 {
-    justify-content: center;
-    height:250;
-    background-color: rgb(0, 0, 0);
+    /* justify-content: center; */
+    /* height:250; */
+    background-color: rgba(0, 0, 0, 0.8);
 
     /* position: fixed;
     top: 50%;
     left: 50%; */
 
 }
+
+body
+{
+    /* 加入width會導致 home-video-area設置vh畫面變寬 */
+    /* width: 1920px;  */
+    
+    margin: 0 auto;
+
+    background-color: rgb(0, 0, 0);
+    background-image: url(../images/background_3.png);
+
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Noto Serif TC', serif; */
+
+    font-family: 'Crimson Text',serif;
+    
+    color: rgb(207, 207, 207);
+}
+
+p
+{
+    margin: 0;    
+}
+article
+{
+
+}
+nav li
+{
+    /* 隱藏List的符號 */
+    list-style:none;
+    
+}
 .nav
 {
     display: flex;
+    /* 解決nav會自動有margin與padding */
+    margin:0;
+    padding: 0;
+
 
 }
-
-nav li
+.nav-item,.logo
 {
-    list-style:none;
+    /* 讓導覽列的選項有間隔 */
+    margin-left: 20px;
+    /* 選項大小與位置調整 */
+    height: 30px;
+    padding: 20px;
+    padding-right: 0px;
 
-    margin-right: 20px ;
+}
+.nav-item-link
+{
+    /* 移除超連結文字的底線 */
+    text-decoration: none;
+    /* 字型大小 */
     font-size: 20px;
+    /* 設置字間距 */
+    letter-spacing: 3px;
 
 
+
+}
+.nav-item-link:link,.nav-item-link:visited
+{
+    color:rgb(146, 146, 146) ;
+}
+.nav-item-link:hover
+{
+    color: #ffffff;
+    /* border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-top: none;
+    border-bottom: none; */ 
+
+
+
+}
+
+
+.Download
+{
+    /* 去除<p>預設塊元素的margin */
+    display: inline;
+
+}
+.box
+{
+    height: 100%;
+    width: 150px;
+    background-color: rgb(77, 21, 21);
+
+}
+.right
+{
+    margin: 0;
+    margin-left: auto;
     
 }
 
-nav ul li a
+.home-video-area
 {
-    text-decoration-style: none;
-    
+
+    height: 100vh;
+ 
+
 }
 
-article
+.home-video
 {
-    /* position: relative;
-    left: 40px; */
-    padding-left: 20%;
-    padding-right: 20%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.home-video video
+{
+    /* 加入以下設置讓影片可以剛好占滿瀏覽器畫面 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-h1,h2,section
+
+.home-introduction
 {
-    color: rgb(65, 22, 0);
-    
+
+
+
+}
+
+.section-1
+{
+    text-align: center;
+    line-height: 25px;
+}
+.section-title
+{
+    letter-spacing: 5px;
 }
 
 #footer
 {
     color: rgb(231, 231, 231);
-    width: 1920px;
-    height: 50px;
+
+
     background-color: black;
-    
-    /* position: fixed; */
-    bottom:0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
     text-align:center;
+    
+
+
 
 }
+
+

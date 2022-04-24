@@ -1,0 +1,23 @@
+/* Media頁面 */
+.end-background-area
+{
+
+    background-image: url(/UCH-Homework/TheSeekerWeb/images/end_background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    padding: 6rem 0rem 4rem 0rem;
+
+    transition: transform .75s;
+
+}
+
+/* test 3d透視過度動畫 */
+/* 
+.end-background-area:hover
+{
+    transition: transform .75s;
+    transform: perspective(1920px) rotateX(10deg);
+
+} 
+*/
